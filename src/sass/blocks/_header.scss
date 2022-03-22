@@ -1,0 +1,85 @@
+.header {
+    position: relative;
+    &__bg {
+        z-index: 1;
+        background-color: $main-color;
+    }
+    &__contacts {
+        height: 33px;
+        padding: 9px;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: right;
+        a {
+            margin-left: 15px;
+        }
+    }  
+    &__logo {
+        display: block;
+        width: 190px;
+        height: 190px;
+        img {
+            height: 100%;
+        }
+    }
+    &__nav {
+        z-index: 1;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:#fff;
+        &-list {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style-type: none;
+        }
+        &-link {
+            margin: 0 17px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color:#000;
+            cursor: pointer;
+        }
+    }
+    &__parallax {
+        padding: 15px;
+        height: calc(100vh - 230px);
+        background-image: url('../img/bg.jpg');
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__title {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: fit-content;
+        font-family: 'Amatic SC', sans-serif;
+        font-size: 56px;
+        color:#fff;
+        background-color: rgba(25, 36, 101, 0.5)
+    }
+    &__subtitle {
+        position: fixed;
+        top: calc(40% + 100px);
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: block;
+        width: fit-content;
+        padding: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        color:#fff;
+        background-color: rgba(25, 36, 101, 0.5)
+    }
+}

@@ -1,0 +1,27 @@
+.about {
+    background-color: $main-color;
+    padding: 80px 0 32px 0;
+    min-height: fit-content;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__photo {
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    &__descr {
+        width: 700px;
+        display: block;
+        color: #fff;
+        font-size: 19px;
+        line-height: 1.375em;
+        p {
+            margin: 0;
+        }
+    }
+
+
+}
