@@ -1,7 +1,6 @@
 .header {
     position: relative;
-    &__bg {
-        z-index: 1;
+    &__bluebg {
         background-color: $main-color;
     }
     &__contacts {
@@ -16,22 +15,48 @@
         a {
             margin-left: 15px;
         }
-    }  
+    } 
+    &__menu {
+        position: absolute;
+        background-color:#fff;
+        height: 200px;
+        padding: 5px 0;
+        width: 100%;
+        overflow: hidden;
+        &-short {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 60px;
+            transition: top 0.5s;
+        }
+        &-hidden {
+            position: fixed;
+            height: 60px;
+            top: -60px;
+            transition: top 0.5s;
+        }
+    } 
     &__logo {
         display: block;
         width: 190px;
         height: 190px;
         img {
             height: 100%;
+        } 
+        &-short {
+            width: 50px;
+            height: 50px;
         }
     }
     &__nav {
         z-index: 1;
-        height: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background:#fff;
+        
         &-list {
             margin: 0;
             display: flex;
@@ -42,14 +67,22 @@
         &-link {
             margin: 0 17px;
             font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
             font-size: 13px;
             text-transform: uppercase;
             text-decoration: none;
-            color:#000;
+            letter-spacing: 1px;
+            color: #000;
             cursor: pointer;
+            &:hover {
+                color:#000;
+                text-decoration: none;
+            }
         }
     }
     &__parallax {
+        margin-top: 200px;
         padding: 15px;
         height: calc(100vh - 230px);
         background-image: url('../img/bg.jpg');
@@ -66,6 +99,7 @@
         width: fit-content;
         font-family: 'Amatic SC', sans-serif;
         font-size: 56px;
+        letter-spacing: 1px;
         color:#fff;
         background-color: rgba(25, 36, 101, 0.5)
     }
@@ -79,6 +113,7 @@
         padding: 10px;
         font-family: 'Raleway', sans-serif;
         font-size: 26px;
+        letter-spacing: 1px;
         color:#fff;
         background-color: rgba(25, 36, 101, 0.5)
     }

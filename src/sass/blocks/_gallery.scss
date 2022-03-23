@@ -12,18 +12,14 @@
     }
     &__item {
         position: relative;
+        overflow: hidden;
+        margin-bottom: 14px;
     }
     &__img {
         display: block;
         z-index: -1;
         width: 100%;
-        margin-bottom: 14px;
-        &:hover {
-            filter: brightness(40%);
-            & + .gallery__btn {
-                display: block;
-            }
-        }
+        transition: all 0.5s;
     }
     &__btn {
         display: none;

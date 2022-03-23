@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class=header id="#header">
-        <div class="header__bg">
+        <div class="header__bluebg">
             <div class="container">
                 <div class="header__contacts">
                     Les Gondies 24660 Agonac – 06 41 70 99 84
@@ -32,19 +32,22 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <nav class="header__nav">
-                <a class="header__logo" href="https://centre-equestre-agonac.fr/"><img src="icons/logo-cea.png" alt="logo"></a>
-                <ul class="header__nav-list">
-                    <li><a class="header__nav-link" href="#">A propos</a></li>
-                    <li><a class="header__nav-link" href="#">TARIFS</a></li>
-                    <li><a class="header__nav-link" href="#">PLANNING</a></li>
-                    <li><a class="header__nav-link" href="#">TÉMOIGNAGES</a></li>
-                    <li><a class="header__nav-link" href="#">ACTUALITÉS</a></li>
-                    <li><a class="header__nav-link" href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+        <div class="header__menu">
+            <div class="container">
+                <nav class="header__nav">
+                    <a class="header__logo" href="https://centre-equestre-agonac.fr/"><img src="icons/logo-cea.png" alt="logo"></a>
+                    <ul class="header__nav-list">
+                        <li><a class="header__nav-link" href="#">A propos</a></li>
+                        <li><a class="header__nav-link" href="#">TARIFS</a></li>
+                        <li><a class="header__nav-link" href="#">PLANNING</a></li>
+                        <li><a class="header__nav-link" href="#">TÉMOIGNAGES</a></li>
+                        <li><a class="header__nav-link" href="#">ACTUALITÉS</a></li>
+                        <li><a class="header__nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        
         <div class="header__parallax">
             <h2 class="header__title animate__animated animate__fadeInUp wow">CENTRE EQUESTRE D’AGONAC</h2>
             <h2 class="header__subtitle animate__animated animate__fadeInUp wow">Cours, pensions, balades à 15 minutes de Périgueux, en Dordogne</h2>
@@ -143,10 +146,27 @@
                         <div class="tarifs__list-name">CARTE 10H (VALABLE 4 MOIS)</div>
                         <div class="tarifs__list-price">150 euros</div>
                     </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">PROMENADE EN MAIN (JUSQU'À 8 ANS - 3/4H)</div>
+                        <div class="tarifs__list-price">10 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">COURS BABY PONEYS / MOIS</div>
+                        <div class="tarifs__list-price">45 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">1/2 JOURNÉE DE STAGE</div>
+                        <div class="tarifs__list-price">30 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">COURS PARTICULIERS</div>
+                        <div class="tarifs__list-price">32 euros</div>
+                    </li>
+
                 </ul>
                 <ul class="tarifs__list">
                     <li class="tarifs__list-item">
-                        <h3 >Cours non adhérents</h3>
+                        <h3 class="tarifs__list-title">Cours non adhérents</h3>
                     </li> 
                     <li class="tarifs__list-item">
                         <div class="tarifs__list-name"> 1 heure (leçon ou balade)</div>
@@ -154,63 +174,139 @@
                     </li>
                     <li class="tarifs__list-item">
                         <div class="tarifs__list-name">Forfait mois 1h/semaine</div>
-                        <div class="tarifs__list-price">65 euros </div>
+                        <div class="tarifs__list-price">80 euros </div>
                     </li>
                     <li class="tarifs__list-item">
                         <div class="tarifs__list-name">Forfait mois 2h/semaine</div>
-                        <div class="tarifs__list-price">120 euros</div>
+                        <div class="tarifs__list-price">150 euros</div>
                     </li>
                     <li class="tarifs__list-item">
                         <div class="tarifs__list-name">CARTE 10H (VALABLE 4 MOIS)</div>
-                        <div class="tarifs__list-price">150 euros</div>
+                        <div class="tarifs__list-price">180 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">PROMENADE EN MAIN (JUSQU'À 8 ANS - 3/4H)</div>
+                        <div class="tarifs__list-price">10 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">COURS PARTICULIERS</div>
+                        <div class="tarifs__list-price">40 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">1/2 JOURNÉE DE STAGE</div>
+                        <div class="tarifs__list-price">38 euros</div>
+                    </li>
+                    <li class="tarifs__list-item">
+                        <div class="tarifs__list-name">COURS BABY PONEYS / MOIS</div>
+                        <div class="tarifs__list-price">45 euros</div>
                     </li>
                 </ul>
                 <ul class="tarifs__list">
                     <li class="tarifs__list-item">
-                        <h3 >Licences & cotisations</h3>
+                        <h3 class="tarifs__list-title">Licences & cotisations</h3>
                     </li>
                     <li class="tarifs__list-item">
-                        <div class="tarifs__list-name"> 1 heure (leçon ou balade)</div>
-                        <div class="tarifs__list-price"> 20 euros</div>
+                        <div class="tarifs__list-name">LICENCE -18 ANS</div>
+                        <div class="tarifs__list-price"> 25 euros</div>
                     </li>
                     <li class="tarifs__list-item">
-                        <div class="tarifs__list-name">Forfait mois 1h/semaine</div>
-                        <div class="tarifs__list-price">65 euros </div>
+                        <div class="tarifs__list-name">LICENCE +18 ANS</div>
+                        <div class="tarifs__list-price">36 euros </div>
                     </li>
                     <li class="tarifs__list-item">
-                        <div class="tarifs__list-name">Forfait mois 2h/semaine</div>
-                        <div class="tarifs__list-price">120 euros</div>
-                    </li>
-                    <li class="tarifs__list-item">
-                        <div class="tarifs__list-name">CARTE 10H (VALABLE 4 MOIS)</div>
-                        <div class="tarifs__list-price">150 euros</div>
+                        <div class="tarifs__list-name">COTISATION ANNUELLE</div>
+                        <div class="tarifs__list-price">45 euros</div>
                     </li>
                 </ul>
                 <ul class="tarifs__list">
                     <li class="tarifs__list-item">
-                        <h3 >Propriétaires</h3>
+                        <h3 class="tarifs__list-title">Propriétaires</h3>
                     </li>
                     <li class="tarifs__list-item">
-                        <div class="tarifs__list-name"> 1 heure (leçon ou balade)</div>
-                        <div class="tarifs__list-price"> 20 euros</div>
+                        <div class="tarifs__list-name"> FORFAIT MOIS 1H/SEMAINE</div>
+                        <div class="tarifs__list-price"> 55 euros</div>
                     </li>
                     <li class="tarifs__list-item">
-                        <div class="tarifs__list-name">Forfait mois 1h/semaine</div>
-                        <div class="tarifs__list-price">65 euros </div>
-                    </li>
-                    <li class="tarifs__list-item">
-                        <div class="tarifs__list-name">Forfait mois 2h/semaine</div>
-                        <div class="tarifs__list-price">120 euros</div>
+                        <div class="tarifs__list-name">FORFAIT MOIS 2H/SEMAINE</div>
+                        <div class="tarifs__list-price">100 euros </div>
                     </li>
                     <li class="tarifs__list-item">
                         <div class="tarifs__list-name">CARTE 10H (VALABLE 4 MOIS)</div>
-                        <div class="tarifs__list-price">150 euros</div>
+                        <div class="tarifs__list-price">135 euros</div>
                     </li>
                 </ul>
             </div>
 
         </div>
     </section>
+
+    <section class="pension">
+        <div class="container">
+            <h2 class="title title_white">TARIFS PENSION</h2>
+            <div class="divider divider_white"></div>
+            <ul class="pension__list">
+                <li class="pension__item">
+                    <div class="pension__item-name">SORTIE AU PADDOCK 6 FOIS/SEMAINE + FOIN MATIN ET SOIR + 3 REPAS/JOUR</div>
+                    <div class="pension__item-price">340 euros</div>
+                </li>
+                <li class="pension__item">
+                    <div class="pension__item-name">EN TROUPEAU + FOIN À VOLONTÉ</div>
+                    <div class="pension__item-price">190 euros</div>
+                </li>
+                <li class="pension__item">
+                    <div class="pension__item-name">GRAND PADDOCK AVEC ABRI PAR 2 OU 3 CHEVAUX + FOIN À VOLONTÉ + 2 REPAS/JOUR</div>
+                    <div class="pension__item-price">220 euros</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="horaire">
+        <h2 class="title">
+            PLANNING COURS<br>
+            RENTRÉE SEPTEMBRE 2020<br>
+            <a href="#">HORAIRE COURS</a>
+        </h2>
+        <div class="divider"></div>
+    </section>
+    <section class="actus">
+        <div class="container">
+            <h2 class="title">LES ACTUS DU CENTRE</h2>
+            <div class="divider"></div>
+            <div class="actus__feed">
+                <div class="actus__post">
+                    <a href="#">
+                        <img src="other1" alt="ecole">
+                    </a>
+                    <a href="" class="title">PROGRAMME DE LA SEMAINE</a>
+                    <div class="actus__descr">Programme de la semaine du 18 au 24: Lundi 18 : –>9h30-12h30 : balade 2h(g3 et +)  Mardi 19 : –>9h30¬12h30: d&ea...</div>
+                    <div class="actus__date">18 mai, 2019</div>
+                </div>
+                <div class="actus__post">
+                    <a href="#">
+                        <img src="other1" alt="ecole">
+                    </a>
+                    <a href="" class="title">NOUVELLE ARRIVÉE AU CENTREE</a>
+                    <div class="actus__descr">Une bonne nouvelle n’arrivant jamais seule… 😁😁 Je vous présente Khéliade d’harrap !!...</div>
+                    <div class="actus__date">12 mai, 2019</div>
+                </div>
+                <div class="actus__post">
+                    <a href="#">
+                        <img src="other1" alt="ecole">
+                    </a>
+                    <a href="" class="title">PLANNING</a>
+                    <div class="actus__descr">Voici le planning, les cours reprennent donc a partir de demain !!! Certains cours on été juste décalé pour &ea....</div>
+                    <div class="actus__date">11 mai, 2019</div>
+                </div>
+            </div>
+            <div class="actus__btn">
+                Plus d'actualités
+                <img src="icons/angle-right-solid.svg" alt="next" class='actus__next'>
+            </div>
+        </div>
+
+    </section>
+
+
 
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
