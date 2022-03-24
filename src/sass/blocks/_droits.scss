@@ -1,0 +1,13 @@
+.droits {
+    padding: 15px;
+    height: calc(100vh);
+    background-color: #000;
+    background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        
+    }
+}

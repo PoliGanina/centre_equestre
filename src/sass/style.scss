@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/animate';
     
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans&family=Raleway&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans&family=Raleway:wght@100;400;600;700&family=Ubuntu+Condensed&display=swap');@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans&family=Raleway&family=Ubuntu+Condensed&display=swap');
 
 @import 'base/variables';
 @import 'base/general';
@@ -11,4 +11,7 @@
 @import 'blocks/gallery';
 @import 'blocks/tarifs';
 @import 'blocks/pension';
-
+@import 'blocks/horaire';
+@import 'blocks/actus';
+@import 'blocks/contacts';
+@import 'blocks/droits';

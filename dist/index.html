@@ -19,11 +19,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class=header id="#header">
+    <header class=header id="header">
         <div class="header__bluebg">
             <div class="container">
                 <div class="header__contacts">
@@ -261,11 +262,10 @@
         </div>
     </section>
     <section class="horaire">
-        <h2 class="title">
-            PLANNING COURS<br>
-            RENTRÉE SEPTEMBRE 2020<br>
-            <a href="#">HORAIRE COURS</a>
-        </h2>
+        <h2 class="title italic">PLANNING COURS</h2>
+        <h2 class="title italic">RENTRÉE SEPTEMBRE 2020</h2>
+        <a class="title title_horaire" href="#">HORAIRE COURS</a>
+    
         <div class="divider"></div>
     </section>
     <section class="actus">
@@ -275,33 +275,93 @@
             <div class="actus__feed">
                 <div class="actus__post">
                     <a href="#">
-                        <img src="other1" alt="ecole">
+                        <img class="actus__img" src="https://centre-equestre-agonac.fr/wp-content/uploads/2014/04/97966465_683490292196434_1436891702697656320_o-539x303.jpg" alt="ecole">
                     </a>
-                    <a href="" class="title">PROGRAMME DE LA SEMAINE</a>
+                    <a href="#" class="actus__title">PROGRAMME DE LA SEMAINE</a>
                     <div class="actus__descr">Programme de la semaine du 18 au 24: Lundi 18 : –>9h30-12h30 : balade 2h(g3 et +)  Mardi 19 : –>9h30¬12h30: d&ea...</div>
                     <div class="actus__date">18 mai, 2019</div>
                 </div>
                 <div class="actus__post">
                     <a href="#">
-                        <img src="other1" alt="ecole">
+                        <img class="actus__img" src="https://centre-equestre-agonac.fr/wp-content/uploads/2014/04/97112627_681051629106967_7591357504588611584_o-539x303.jpg" alt="ecole">
                     </a>
-                    <a href="" class="title">NOUVELLE ARRIVÉE AU CENTREE</a>
+                    <a href="" class="actus__title">NOUVELLE ARRIVÉE AU CENTREE</a>
                     <div class="actus__descr">Une bonne nouvelle n’arrivant jamais seule… 😁😁 Je vous présente Khéliade d’harrap !!...</div>
                     <div class="actus__date">12 mai, 2019</div>
                 </div>
                 <div class="actus__post">
                     <a href="#">
-                        <img src="other1" alt="ecole">
+                        <img class="actus__img" src="https://centre-equestre-agonac.fr/wp-content/uploads/2017/05/96810744_680707342474729_1071708719626059776_o-539x303.jpg" alt="ecole">
                     </a>
-                    <a href="" class="title">PLANNING</a>
+                    <a href="#" class="actus__title">PLANNING</a>
                     <div class="actus__descr">Voici le planning, les cours reprennent donc a partir de demain !!! Certains cours on été juste décalé pour &ea....</div>
                     <div class="actus__date">11 mai, 2019</div>
                 </div>
             </div>
-            <div class="actus__btn">
-                Plus d'actualités
-                <img src="icons/angle-right-solid.svg" alt="next" class='actus__next'>
+            <a href="#" class="actus__btn">
+                <div class="actus__btn-text">Plus d'actualités</div>
+                <div class="actus__btn-next">
+                    <img src="icons/chevron-right-solid.svg" alt="next">
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2 class="title">CONTACT</h2>
+            <div class="divider"></div>
+
+            <div class="contacts__list">
+                <div class="contacts__addr">Les gondies 24660 Agonac</div>
+                <div class="contacts__tel">06 41 70 99 84</div>
+                <div class="contacts__email">centre.equestre.agonac@gmail.com</div>
             </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11235.834228653619!2d0.7436591!3d45.2486308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0d2a34777310276!2sCentre%20%C3%A9questre%20d'agonac!5e0!3m2!1sfr!2sfr!4v1590651484578!5m2!1sfr!2sfr" width="1100" height="523" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <div class="contacts__wrapper">
+                <div class="contacts__text">
+                    <h2 class="contacts__text-title">ENVOYER UN MESSAGE</h2>
+                    <div class="contacts__text-descr">Vous pouvez nous contacter directement via ce formulaire. Nous mettrons tout en œuvre pour vous répondre rapidement.
+                    </div>
+                </div>
+
+                <form action class="contacts__form">
+                    <div class="contacts__input">
+                        <div class="contacts__name">
+                            <input required name="name" id="name" type="name">
+                            <label for="name">Nom<span>*</span></label>
+                        </div>
+                        <div class="contacts__mail">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">Email<span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="contacts__textarea">
+                        <textarea name="text" id="text"></textarea>
+                        <label for="text">Message<span>*</span></label>
+                    </div>
+                    <div class="contacts__policy">
+                        <input required type="checkbox" id="checkbox">
+                        <div class="contacts__policy-text">J’ai pris connaissance de la <a href="/policy.html">Politique de Protection des Données</a><span>*</span>
+                            </div>
+                    </div>
+
+                    <button class="contacts__btn">Envoyer<span>*</span></button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="droits">
+        <a class="droits__logo" href="https://centre-equestre-agonac.fr/"><img src="icons/logo-cea.png" alt="logo"></a>
+        <div class="droits__list">
+            <div class="droits__copyright">© Tous droits réservés Centre Equestre d'Agonac - </div>
+            <a href="#" class="droits__legal">Mentions légales</a>
+            <a href="#" class="droits__donnee">Protection des données</a>
+            <a href="#" class="droits__cookies">Gestion des cookies</a>
+             |  | Gestion des cookies
         </div>
 
     </section>

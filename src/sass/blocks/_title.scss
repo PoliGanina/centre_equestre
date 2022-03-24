@@ -1,9 +1,21 @@
 .title {
+    display: block;
     color: $main-color;
     font-family: 'Amatic SC', sans-serif;
     font-size: 35px;
+    letter-spacing: 1px;
     text-align: center;
     margin: 0;
+    &_horaire {
+        font-weight: 600;
+        &:hover {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+    }
+}
+.italic {
+    font-style: italic;
 }
 .divider {
     background-color: #303030;

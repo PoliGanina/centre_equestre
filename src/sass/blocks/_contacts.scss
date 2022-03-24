@@ -1,0 +1,166 @@
+.contacts {
+    padding: 80px 0 30px 0;
+    &__list {
+        background-color: rgb(60, 102, 145, 0.7);
+        height: 230px;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+        margin: 80px 0 120px 0;
+    }
+    &__addr {
+        color:#fff;
+        font-size: 14px;
+    }
+    &__tel {
+        color:#fff;
+        font-size: 14px;
+    }
+    &__email {
+        color:#fff;
+        font-size: 14px;
+    }
+    &__wrapper {
+        margin-top: 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 535px;
+        &-title {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 30px;
+            font-weight: 100;
+            text-transform: uppercase;
+            color: #303030;
+        }
+        &-descr {
+            margin-top: 30px;
+            font-family: 'Raleway',sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 26px;
+            font-weight: 400;
+        }
+    }
+    &__form {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 535px;
+        box-shadow: 0px 0px 9px -1px rgba(34, 60, 80, 0.2);
+    }
+    &__input {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__name {
+        position: relative;
+        input {
+            width: 236px;
+            height: 40px;
+            padding: 0.72em 0.9em 0.65em;
+            border-radius: 2px;
+            border: 1px solid #d6d8d9;
+            background-color: #fafafa;
+            line-height: 1.4em;
+            font-family: inherit;
+        }
+
+        label {
+            position: absolute;
+            top: -23px;
+            left: 0px;
+            font-weight: 400;
+            font-family: 'Raleway',sans-serif;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 600;
+            span {
+                color:red;
+            }
+        }
+    }
+    &__mail {
+        position: relative;
+        input {
+            width: 236px;
+            height: 40px;
+            padding: 0.72em 0.9em 0.65em;
+            border-radius: 2px;
+            border: 1px solid #d6d8d9;
+            background-color: #fafafa;
+            line-height: 1.4em;
+            font-family: inherit;
+        }
+
+        label {
+            position: absolute;
+            top: -23px;
+            left: 0px;
+            font-weight: 600;
+            span {
+                color:red;
+            }
+        }
+    }
+    &__textarea {
+        margin-top: 50px;
+        position: relative;
+        textarea {
+            width: 493px;
+            height: 120px;
+            resize: none;
+    
+            box-sizing: border-box;
+            padding: 0.72em 0.9em 0.65em;
+            border-radius: 2px;
+            border: 1px solid #d6d8d9;
+            background-color: #fafafa;
+            line-height: 1.4em;
+            font-family: inherit;
+        }
+        
+        label {
+            position: absolute;
+            top: -23px;
+            left: 0px;
+            font-weight: 600;
+            span {
+                color:red;
+            }
+        }
+    }
+    &__policy {
+        margin-top: 25px;
+        margin-bottom: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        width: 450px;
+    }
+    &__btn {
+        margin: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        border-radius: 5%;
+        background-color: #4488ee;
+        color: #fff;
+        border: none;
+        &:hover {
+            background-color: #3c7ad6;
+            transition: all 0.5s;
+        }
+    }
+}

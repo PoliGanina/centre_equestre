@@ -1,5 +1,8 @@
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -17,9 +20,13 @@
     right: 30px;
     width: 56px;
     height: 56px;
-    background-color: rgba($color: #000000, $alpha: 0.2);
+    background-color: transparent;
     border-radius: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba($color: rgba(161, 159, 159, 0.849), $alpha: 0.2);
+        &:hover {
+            background-color: rgba($color: rgba(161, 159, 159, 0.849), $alpha: 0.2);
+            transition: all 0.3s;
+        }
     &-link {
         display: block;
         margin: 15px auto;
