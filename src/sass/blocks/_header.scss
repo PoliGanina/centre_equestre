@@ -1,11 +1,12 @@
 .header {
+    z-index: 4;
     position: relative;
     &__bluebg {
         background-color: $main-color;
     }
     &__contacts {
         height: 33px;
-        padding: 9px;
+        padding: 3px;
         color: #fff;
         font-family: 'Raleway', sans-serif;
         font-size: 13px;
@@ -100,6 +101,7 @@
         width: fit-content;
         font-family: 'Amatic SC', sans-serif;
         font-size: 56px;
+        line-height: 56px;
         letter-spacing: 1px;
         color:#fff;
         background-color: rgba(25, 36, 101, 0.5)
