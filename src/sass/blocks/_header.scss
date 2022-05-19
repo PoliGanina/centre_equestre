@@ -13,7 +13,7 @@
         font-weight: 400;
         line-height: 13px;
         text-align: right;
-        a {
+        &__link {
             margin-left: 15px;
         }
     } 
@@ -84,6 +84,7 @@
         }
     }
     &__parallax {
+        z-index: -1;
         margin-top: 200px;
         padding: 15px;
         height: calc(100vh - 230px);
@@ -97,6 +98,7 @@
         position: fixed;
         top: 40%;
         left: 50%;
+        z-index: -1;
         transform: translate(-50%, 50%);
         width: fit-content;
         font-family: 'Amatic SC', sans-serif;
@@ -110,6 +112,7 @@
         position: fixed;
         top: calc(40% + 100px);
         left: 50%;
+        z-index: -1;
         transform: translate(-50%, 50%);
         display: block;
         width: fit-content;
@@ -119,5 +122,81 @@
         letter-spacing: 1px;
         color:#fff;
         background-color: rgba(25, 36, 101, 0.5)
+    }
+}
+@media (max-width: 1140px) {
+    .header {
+        &__logo{
+            width: 150px;
+            height: 150px;
+        }
+        &__menu {
+            height: 160px;
+        }
+        &__nav {
+            &-link {
+                margin: 0 13px;
+            }
+        }
+        &__parallax {
+            margin-top: 160px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        &__nav-link {
+        margin: 0 7px;
+        }
+        &__title {
+            font-size: 46px;
+            line-height: 46px;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 20px;
+            top: calc(40% + 80px);
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+    .header {
+        &__nav {
+            &-list {
+                flex-flow: wrap;
+                justify-content: space-between;
+            }
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        &__subtitle {
+            font-size: 17px;
+            top: calc(40% + 60px);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 300px;
+    }
+    .header {
+        &__nav {
+            &-list { 
+                flex-flow: unset;
+                flex-direction: column;
+                justify-content: center;
+            }
+            &-link {
+                line-height: 10px;
+            }
+        }
     }
 }

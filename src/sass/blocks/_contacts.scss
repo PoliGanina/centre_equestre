@@ -64,7 +64,7 @@
     }
     &__name {
         position: relative;
-        input {
+        &-input {
             width: 236px;
             height: 40px;
             padding: 0.72em 0.9em 0.65em;
@@ -75,7 +75,7 @@
             font-family: inherit;
         }
 
-        label {
+        &-label {
             position: absolute;
             top: -23px;
             left: 0px;
@@ -84,14 +84,16 @@
             font-size: 14px;
             line-height: 26px;
             font-weight: 600;
-            span {
+            &::after {
+                content: '*';
+                font-size: 14px;
                 color:red;
             }
         }
     }
     &__mail {
         position: relative;
-        input {
+        &-input {
             width: 236px;
             height: 40px;
             padding: 0.72em 0.9em 0.65em;
@@ -102,12 +104,14 @@
             font-family: inherit;
         }
 
-        label {
+        &-label {
             position: absolute;
             top: -23px;
             left: 0px;
             font-weight: 600;
-            span {
+            &::after {
+                content: '*';
+                font-size: 14px;
                 color:red;
             }
         }
@@ -115,7 +119,7 @@
     &__textarea {
         margin-top: 50px;
         position: relative;
-        textarea {
+        &-input {
             width: 493px;
             height: 120px;
             resize: none;
@@ -129,12 +133,14 @@
             font-family: inherit;
         }
         
-        label {
+        &-label {
             position: absolute;
             top: -23px;
             left: 0px;
             font-weight: 600;
-            span {
+            &::after {
+                content: '*';
+                font-size: 14px;
                 color:red;
             }
         }
@@ -165,6 +171,9 @@
         &:hover {
             background-color: #3c7ad6;
             transition: all 0.5s;
+        }
+        &::after {
+            content: '*';
         }
     }
 }

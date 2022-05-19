@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.btn__up {
+.scrollup {
     display: none;
     position: fixed;
     z-index: 100;
@@ -28,14 +28,39 @@
             background-color: rgba($color: rgba(161, 159, 159, 0.849), $alpha: 0.2);
             transition: all 0.3s;
         }
-    &-link {
+    &__link {
         display: block;
         margin: 15px auto;
     }
-    &-img {
+    &__img {
         display: block;
         margin: auto;
         width: 22px;
         height: 20px;
     }
 }
+
+@media (max-width: 1140px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 300px;
+    }
+}
+
+
+

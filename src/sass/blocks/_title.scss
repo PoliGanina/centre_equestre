@@ -8,6 +8,15 @@
     letter-spacing: 1px;
     text-align: center;
     margin: 0;
+    &::after {
+        content: '';
+        background-color: #303030;
+        height: 1px;
+        width: 22px;
+        display: block;
+        margin: 25px auto 50px;
+        text-align: center;
+    }
     &_horaire {
         font-weight: 600;
         &:hover {
@@ -19,20 +28,10 @@
 .italic {
     font-style: italic;
 }
-.divider {
-    background-color: #303030;
-    height: 1px;
-    width: 22px;
-    display: block;
-    margin: 25px auto 50px;
-    text-align: center;
-
-}
 .title_white {
     color:#fff;
-}
-
-.divider_white {
-    background-color: #fff;
-
+    &::after {
+        content: '';
+        background-color: #fff;
+    }
 }

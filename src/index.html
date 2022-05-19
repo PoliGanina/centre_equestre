@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centre équestre d’Agonac</title>
-
     <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
@@ -18,8 +17,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-    
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">  
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -29,7 +27,7 @@
             <div class="container">
                 <div class="header__contacts">
                     Les Gondies 24660 Agonac – 06 41 70 99 84
-                <a href="https://www.facebook.com/Centre-Equestre-dAgonac-432202147325251/"><img style="width: 24px; height: 20px;" src="icons/fb.png" alt=""></a>
+                <a class="header__link" href="https://www.facebook.com/Centre-Equestre-dAgonac-432202147325251/"><img style="width: 24px; height: 20px;" src="icons/fb.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -48,23 +46,19 @@
                 </nav>
             </div>
         </div>
-        
         <div class="header__parallax">
             <h2 class="header__title animate__animated animate__fadeInUp wow">CENTRE EQUESTRE D’AGONAC</h2>
             <h2 class="header__subtitle animate__animated animate__fadeInUp wow">Cours, pensions, balades à 15 minutes de Périgueux, en Dordogne</h2>
         </div>
     </header>
-
-    <div class="btn__up">
-        <a href="#header" class="btn__up-link">
-            <img src="icons/arrow-up-solid.svg" alt="arrow-up" class="btn__up-img">
+    <div class="scrollup">
+        <a href="#header" class="scrollup__link">
+            <img src="icons/arrow-up-solid.svg" alt="arrow-up" class="scrollup__img">
         </a>
     </div>
-
     <section class="about">
         <div class="container">
             <h1 class="title title_white">A PROPOS DU CENTRE</h1>
-            <div class="divider divider_white"></div>
             <div class="about__wrapper">
                 <img src="img/about.jpg" alt="photoOfOwner" class="about__photo">
                 <div class="about__descr">
@@ -77,8 +71,7 @@
             </div>
         </div>
     </section>
-
-    <section class="gallery">
+    <!-- <section class="gallery">
             <h2 class="title">LE CENTRE EN PHOTOS</h2>
             <div class="divider"></div>
             <div class="gallery__grid">
@@ -163,7 +156,6 @@
                         <div class="tarifs__list-name">COURS PARTICULIERS</div>
                         <div class="tarifs__list-price">32 euros</div>
                     </li>
-
                 </ul>
                 <ul class="tarifs__list">
                     <li class="tarifs__list-item">
@@ -237,10 +229,8 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
-
     <section class="pension">
         <div class="container">
             <h2 class="title title_white">TARIFS PENSION</h2>
@@ -316,44 +306,38 @@
                 <div class="contacts__tel">06 41 70 99 84</div>
                 <div class="contacts__email">centre.equestre.agonac@gmail.com</div>
             </div>
-
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11235.834228653619!2d0.7436591!3d45.2486308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0d2a34777310276!2sCentre%20%C3%A9questre%20d'agonac!5e0!3m2!1sfr!2sfr!4v1590651484578!5m2!1sfr!2sfr" width="1100" height="523" frameborder="0" style="border: 0px; pointer-events: none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
             <div class="contacts__wrapper">
                 <div class="contacts__text">
                     <h2 class="contacts__text-title">ENVOYER UN MESSAGE</h2>
                     <div class="contacts__text-descr">Vous pouvez nous contacter directement via ce formulaire. Nous mettrons tout en œuvre pour vous répondre rapidement.
                     </div>
                 </div>
-
                 <form action class="contacts__form">
                     <div class="contacts__input">
                         <div class="contacts__name">
-                            <input required name="name" id="name" type="name">
-                            <label for="name">Nom<span>*</span></label>
+                            <input class="contacts__name-input" required name="name" id="name" type="name">
+                            <label class="contacts__name-label"for="name">Nom</label>
                         </div>
                         <div class="contacts__mail">
-                            <input required name="email" id="email" type="email">
-                            <label for="email">Email<span>*</span></label>
+                            <input class="contacts__mail-input"required name="email" id="email" type="email">
+                            <label class="contacts__mail-label"for="email">Email</label>
                         </div>
                     </div>
                     <div class="contacts__textarea">
-                        <textarea name="text" id="text"></textarea>
-                        <label for="text">Message<span>*</span></label>
+                        <textarea class="contacts__textarea-input" name="text" id="text"></textarea>
+                        <label class="contacts__textarea-label" for="text">Message</label>
                     </div>
                     <div class="contacts__policy">
-                        <input required type="checkbox" id="checkbox">
-                        <div class="contacts__policy-text">J’ai pris connaissance de la <a href="/policy.html">Politique de Protection des Données</a><span>*</span>
+                        <input class="contacts__policy-input" required type="checkbox" id="checkbox">
+                        <div class="contacts__policy-text">J’ai pris connaissance de la <a href="/policy.html">Politique de Protection des Données</a>
                             </div>
                     </div>
-
-                    <button class="contacts__btn">Envoyer<span>*</span></button>
+                    <button class="contacts__btn">Envoyer</button>
                 </form>
-
             </div>
         </div>
     </section>
-
     <section class="droits">
         <a class="droits__logo" href="https://centre-equestre-agonac.fr/"><img src="icons/logo-cea.png" alt="logo"></a>
         <div class="droits__list">
@@ -362,11 +346,7 @@
             <a href="#" class="droits__donnee">Protection des données</a>
             <a href="#" class="droits__cookies">Gestion des cookies</a>
         </div>
-
-    </section>
-
-
-
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
