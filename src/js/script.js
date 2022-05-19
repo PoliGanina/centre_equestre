@@ -9,9 +9,9 @@ const menu = document.querySelector('.header__menu'),
 
 $(window).scroll(function () {
 if ($(this).scrollTop() > 900) {
-    $('.btn__up').fadeIn();
+    $('.scrollup').fadeIn();
 } else {
-    $('.btn__up').fadeOut();
+    $('.scrollup').fadeOut();
 }
 });
 

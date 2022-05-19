@@ -50,6 +50,38 @@
             }
         }
     }
+    &__plus {
+        display: none;
+    }
 
     
 }
+// @media (max-width: 1140px) {
+    
+// }
+@media (max-width: 992px) {
+    .gallery {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 14px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .gallery {
+        &__grid {
+            grid-template-columns: repeat(1 , 1fr);
+            column-gap: 14px;
+        }
+        &__plus {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}
+// @media (max-width: 576px) {
+// }

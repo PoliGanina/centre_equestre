@@ -1,9 +1,10 @@
 .about {
-    z-index: 5;
+    z-index: 4;
     background-color: $main-color;
     padding: 80px 0 32px 0;
     min-height: fit-content;
     &__wrapper {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -51,15 +52,12 @@
     .about {
         padding: 50px 0 20px 0;
         &__photo {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             margin: 15px;
         }
         &__descr {
-            width: 350px;
-            p {
-                font-size: 16px;
-            }
+            width: 400px;
         }
     }
 }
