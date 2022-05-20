@@ -28,3 +28,49 @@
         }
     }
 }
+// @media (max-width: 1140px) {
+//     .pension {
+//         &__item {
+//             &-name {
+//                 width: 250px;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 992px) {
+    .pension {
+        &__item {
+            &-name {
+                font-size: 14px;
+            }
+            &-price {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .pension {
+        padding: 50px 0 20px 0;
+        &__item {
+            &-name {
+                width: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .pension {
+        &__item {
+            height: 80px;
+            align-items: flex-start;
+            &-name {
+                width: 250px;
+            }
+            &-price{
+                text-align: center;
+            }
+        }
+    }
+}

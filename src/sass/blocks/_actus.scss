@@ -8,7 +8,7 @@
         justify-content: space-between;
     }
     &__post {
-        width: 352px;
+        width: 350px;
         overflow: hidden;
         
     }
@@ -77,5 +77,30 @@
             }
         }
         
+    }
+}
+@media (max-width: 1140px) {
+    .actus {
+        padding: 20px 0 30px 0;
+        &__feed {
+            flex-wrap: wrap;
+        }
+        &__post {
+            width: 330px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .actus {
+        &__feed {
+            justify-content: center;
+        }
+        &__btn {
+            margin-top: 10px;
+            &-text {
+                margin: 0;
+            }
+        }
     }
 }

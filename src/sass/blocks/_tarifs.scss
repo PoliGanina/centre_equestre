@@ -43,11 +43,44 @@
 
 }
 @media (max-width: 1140px) {
+    .tarifs {
+        &__list {
+            &-name {
+                width: 250px;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
+    .tarifs {
+        &__grid {
+            row-gap: 50px;
+        }
+        &__list {
+            &-title {
+                font-size: 23px;
+            }
+            &-name {
+                font-size: 14px;
+                width: 200px;
+            }
+            &-price {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
-}
-@media (max-width: 576px) {
+    .tarifs {
+        padding: 50px 0 20px 0;
+        &__grid {
+            grid-template-rows: repeat(2, minmax(280px, auto));
+            grid-template-columns: 100%;
+        }
+        &__list-item {
+            height: 45px;
+        }
+    }
 }

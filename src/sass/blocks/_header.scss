@@ -129,9 +129,21 @@
         &__logo{
             width: 150px;
             height: 150px;
+            &-short {
+                width: 50px;
+                height: 50px;
+            }
         }
         &__menu {
             height: 160px;
+            &-hidden {
+                position: fixed;
+                height: 60px;
+                top: -160px;
+            }
+            &-short {
+                height: 60px;
+            }
         }
         &__nav {
             &-link {
@@ -145,26 +157,7 @@
 }
 
 @media (max-width: 992px) {
-
     .header {
-        &__menu {
-            &-hidden {
-                position: fixed;
-                height: 60px;
-                top: -160px;
-            }
-            &-short {
-                height: 60px;
-            }
-            
-            
-        }
-        &__logo {
-            &-short {
-                width: 50px;
-                height: 50px;
-            }
-        }
         &__nav-link {
         margin: 0 7px;
         }
