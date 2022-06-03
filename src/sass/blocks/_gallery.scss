@@ -72,6 +72,10 @@
             grid-template-columns: 500px;
             column-gap: 14px;
         }
+        &__column {
+            justify-self: center;
+
+        }
         &__plus {
         display: block;
         text-decoration: none;
@@ -82,5 +86,10 @@
         display: none;
     }
 }
-// @media (max-width: 576px) {
-// }
+@media (max-width: 576px) {
+    .gallery {
+        &__grid {
+            grid-template-columns: 300px;
+        }
+    }
+}

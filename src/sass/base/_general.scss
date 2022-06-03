@@ -29,8 +29,10 @@
             transition: all 0.3s;
         }
     &__link {
-        display: block;
-        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
     &__img {
         display: block;
@@ -55,12 +57,19 @@
     .container {
         width: 500px;
     }
+    .scrollup {
+        height: 40px;
+        width: 40px;
+        &__img {
+            display: block;
+            margin: auto;
+            width: 22px;
+            height: 20px;
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
         width: 300px;
     }
 }
-
-
-

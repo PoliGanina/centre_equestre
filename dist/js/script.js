@@ -4,7 +4,9 @@ const menu = document.querySelector('.header__menu'),
       logo = document.querySelector('.header__logo'),
       galleryItems = document.querySelectorAll('.gallery__item'),
       footer = document.querySelector('.droits'),
-      previous = document.querySelector('.contacts');
+      previous = document.querySelector('.contacts'),
+      hamburger = document.querySelector('.hamburger'),
+      navList = document.querySelector('.header__nav-list');
 
 
 $(window).scroll(function () {
@@ -45,6 +47,12 @@ window.addEventListener('scroll', () => {
     }
 });
 
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    navList.classList.toggle('show');
+    menu.classList.toggle('header__menu-hamburger');
+})
+
 
 galleryItems.forEach(itemEl => {
     const [galeryImg, modalOpenBtn] = itemEl.children;
@@ -60,4 +68,8 @@ galleryItems.forEach(itemEl => {
         modalOpenBtn.classList.remove('gallery__btn-active');
     });
 });
+
+
+
+
 
